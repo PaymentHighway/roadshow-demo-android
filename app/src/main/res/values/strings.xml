@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PH Roadshow Demo</string>
+    <string name="checkout">Checkout</string>
+    <string name="total">Total</string>
+    <string name="pay">Pay</string>
+    <string name="add_card">Add card</string>
+    <string name="list_transactions">List transactions</string>
+    <string name="charge_card">Charge card</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="list_cards">List cards</string>
+</resources>
