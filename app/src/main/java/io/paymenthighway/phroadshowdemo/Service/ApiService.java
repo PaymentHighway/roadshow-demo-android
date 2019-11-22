@@ -23,9 +23,10 @@ public interface ApiService {
     @GET("card/add/form")
     Single<TokenizationForm> addCard(
             @Query("user") String user,
-            @Query("success") String success,
-            @Query("cancel") String cancel,
-            @Query("failure") String failure
+            @Query("successUrl") String success,
+            @Query("cancelUrl") String cancel,
+            @Query("failureUrl") String failure,
+            @Query("language") String language
     );
 
     @GET("charge")
@@ -34,8 +35,8 @@ public interface ApiService {
             @Query("token") String token,
             @Query("amount") Integer amount,
             @Query("order") String order,
-            @Query("success") String success,
-            @Query("cancel") String cancel,
-            @Query("failure") String failure
+            @Query("successUrl") String success,
+            @Query("cancelUrl") String cancel,
+            @Query("failureUrl") String failure
     );
 }

@@ -47,9 +47,10 @@ public class MainActivity extends ApiActivity {
         Log.d("PHDEMO", properties.getProperty("return.add_card.success"));
         apiService.addCard(
                 user,
-                properties.getProperty("return.add_card.success"),
-                properties.getProperty("return.add_card.success"),
-                properties.getProperty("return.add_card.success")
+                properties.getProperty("return.add_card.successUrl"),
+                properties.getProperty("return.add_card.successUrl"),
+                properties.getProperty("return.add_card.successUrl"),
+                properties.getProperty("form.language")
         )
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
