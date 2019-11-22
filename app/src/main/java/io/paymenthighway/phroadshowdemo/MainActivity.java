@@ -44,7 +44,6 @@ public class MainActivity extends ApiActivity {
 
     private void addCard() {
         Log.d("PHDEMO", "Add card");
-        Log.d("PHDEMO", properties.getProperty("return.add_card.success"));
         apiService.addCard(
                 user,
                 properties.getProperty("return.add_card.successUrl"),
